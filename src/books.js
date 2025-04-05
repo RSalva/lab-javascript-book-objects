@@ -58,6 +58,10 @@ function getBookDetails(book) {
 
 // Iteration 3 | Delete Language
 // Your code here:
+for (let i = 0; i < booksArray.length; i++) {
+  const currentBook = booksArray[i];
+  delete currentBook["details"]["language"];
+}
 
 
 
