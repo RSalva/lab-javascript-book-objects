@@ -69,6 +69,11 @@ for (let i = 0; i < booksArray.length; i++) {
 
 // Iteration 4 | Estimated Reading Time
 // Your code here:
+for (let i = 0; i < booksArray.length; i++) {
+  const currentBook = booksArray[i];
+  const readingTime = Math.ceil(currentBook["pages"] * 500 / 90);
+  currentBook["readingTime"] = readingTime;
+}
 
 
 
